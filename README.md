@@ -9,7 +9,7 @@ repositories {
     maven { url "https://gitee.com/ezy/repo/raw/cosmo/"}
 }
 dependencies {
-    implementation "me.reezy.cosmo:base:0.7.0"
+    implementation "me.reezy.cosmo:base:0.8.0"
 }
 ```
 ## 使用
@@ -19,11 +19,7 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
 
     override fun onSetupUI() {
          // TODO
-    }
-
-    override fun onLoadData(isRefresh: Boolean) {
-         // TODO
-    }
+    } 
 }
 
 class SimpleFragment: BaseFragment(R.layout.layout_simple) {
@@ -32,7 +28,7 @@ class SimpleFragment: BaseFragment(R.layout.layout_simple) {
          // TODO
     }
 
-    override fun onLoadData(isRefresh: Boolean) {
+    override fun onLazyLoad() {
          // TODO
     }
 }

@@ -17,11 +17,11 @@ abstract class BaseFragment(@LayoutRes contentLayoutId: Int) : Fragment(contentL
     override fun onResume() {
         super.onResume()
         if (!initialized && !isHidden) {
-            onLoadData(true)
+            onLazyLoad()
             initialized = true
         }
     }
 
-    override fun onLoadData(isRefresh: Boolean) {
+    open fun onLazyLoad() {
     }
 }

@@ -10,10 +10,6 @@ abstract class BaseActivity(@LayoutRes contentLayoutId: Int) : AppCompatActivity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         onSetupUI()
-        onLoadData(true)
-    }
-
-    override fun onLoadData(isRefresh: Boolean) {
     }
 
     override fun onDestroy() {
