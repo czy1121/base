@@ -1,6 +1,6 @@
 # base
 
-页面基类 BaseActivity/BaseFragment 统一了子类初始化UI(onSetupUI)与首次加载数据(onLoadData)的位置
+页面基类 BaseActivity/BaseFragment 统一了子类初始化UI(onSetupUI)的位置
 
 ## Gradle
 
